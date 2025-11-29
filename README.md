@@ -2,8 +2,6 @@
 
 A powerful browser extension that provides instant AI-powered translation for any text on the web. Simply select text and translate it using multiple AI providers including OpenAI, Claude, Gemini, DeepSeek, and OpenRouter.
 
-![AiTranslator](icons/icon-128.png)
-
 <div align="center">
 
 <p align="center">
@@ -161,4 +159,5 @@ If you encounter any issues or have questions:
 ---
 
 Made with ❤️ by [TheRealPourya](https://github.com/xPOURY4)
+
 
