@@ -4,6 +4,14 @@ A powerful browser extension that provides instant AI-powered translation for an
 
 ![AiTranslator](icons/icon-128.png)
 
+<div align="center">
+
+<p align="center">
+  <img src="AiTranslator.jpg" width="100%" alt="AI Engineering Banner" style="border-radius: 5px;">
+</p>
+
+</div>
+
 ## Features
 
 - 🌐 **Instant Translation**: Select any text on any webpage and get instant translations
@@ -153,3 +161,4 @@ If you encounter any issues or have questions:
 ---
 
 Made with ❤️ by [TheRealPourya](https://github.com/xPOURY4)
+
