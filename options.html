@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AiTranslator Settings</title>
+    <style>
+        body {
+            background-color: #f0f0f3;
+            font-family: 'Segoe UI', sans-serif;
+            color: #0FAF5A;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .container {
+            width: 400px;
+            padding: 30px;
+            border-radius: 20px;
+            background: #f0f0f3;
+            box-shadow: 10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: #f0f0f3;
+            box-shadow: inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff;
+            color: #333;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background: #f0f0f3;
+            box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #ffffff;
+            color: #0FAF5A;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: all 0.2s ease;
+        }
+
+        button:active {
+            box-shadow: inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff;
+        }
+
+        .status {
+            text-align: center;
+            margin-top: 15px;
+            height: 20px;
+            font-size: 14px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e0e0e3;
+            text-align: center;
+        }
+
+        .footer-label {
+            display: inline-block;
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #0FAF5A 0%, #0d9449 100%);
+            color: white;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 3px 3px 6px #d1d1d1, -3px -3px 6px #ffffff;
+            transition: all 0.3s ease;
+        }
+
+        .footer-label:hover {
+            transform: translateY(-2px);
+            box-shadow: 4px 4px 8px #d1d1d1, -4px -4px 8px #ffffff;
+        }
+
+        .footer-text {
+            font-size: 11px;
+            color: #999;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Settings</h1>
+
+        <div class="form-group">
+            <label>Backend Provider</label>
+            <select id="backend">
+                <option value="openrouter">OpenRouter</option>
+                <option value="openai">OpenAI</option>
+                <option value="claude">Claude (Anthropic)</option>
+                <option value="gemini">Gemini</option>
+                <option value="deepseek">DeepSeek</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Default Target Language</label>
+            <select id="language">
+                <option value="English">English</option>
+                <option value="Spanish">Spanish</option>
+                <option value="French">French</option>
+                <option value="German">German</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Japanese">Japanese</option>
+                <option value="Persian">Persian</option>
+                <option value="Arabic">Arabic</option>
+                <option value="Russian">Russian</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>OpenRouter API Key</label>
+            <input type="password" id="apiKey_openrouter">
+        </div>
+
+        <div class="form-group">
+            <label>OpenRouter Model</label>
+            <input type="text" id="openrouter_model" placeholder="e.g. mistralai/mistral-7b-instruct">
+        </div>
+
+        <div class="form-group">
+            <label>OpenAI API Key</label>
+            <input type="password" id="apiKey_openai">
+        </div>
+
+        <div class="form-group">
+            <label>Claude API Key</label>
+            <input type="password" id="apiKey_claude">
+        </div>
+
+        <div class="form-group">
+            <label>Gemini API Key</label>
+            <input type="password" id="apiKey_gemini">
+        </div>
+
+        <div class="form-group">
+            <label>DeepSeek API Key</label>
+            <input type="password" id="apiKey_deepseek">
+        </div>
+
+        <button id="save">Save Settings</button>
+        <div id="status" class="status"></div>
+
+        <div class="footer">
+            <a href="https://x.com/TheRealPourya" target="_blank" class="footer-label">
+                Developed by @TheRealPourya
+            </a>
+            <div class="footer-text">Follow for more tools & updates</div>
+        </div>
+    </div>
+    <script src="options.js"></script>
+</body>
+
+</html>

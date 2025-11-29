@@ -1,0 +1,149 @@
+body {
+  width: 320px;
+  padding: 0;
+  background-color: #f0f0f3;
+  font-family: 'Segoe UI', sans-serif;
+  color: #0FAF5A;
+  margin: 0;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0e0e3;
+}
+
+.logo {
+  width: 36px;
+  height: 36px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.1));
+}
+
+h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0FAF5A;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.description {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.feature-item {
+  font-size: 12px;
+  color: #0FAF5A;
+  font-weight: 500;
+}
+
+.settings-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0FAF5A 0%, #0d9449 100%);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 3px 3px 6px #d1d1d1, -3px -3px 6px #ffffff;
+}
+
+.settings-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 8px #d1d1d1, -4px -4px 8px #ffffff;
+}
+
+.settings-btn:active {
+  transform: translateY(0);
+  box-shadow: inset 3px 3px 6px #d1d1d1, inset -3px -3px 6px #ffffff;
+}
+
+.footer-mini {
+  text-align: center;
+  padding-top: 12px;
+  border-top: 1px solid #e0e0e3;
+}
+
+.footer-mini a {
+  font-size: 11px;
+  color: #0FAF5A;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-mini a:hover {
+  text-decoration: underline;
+}
+
+.setup-guide {
+  margin-top: 15px;
+  padding: 12px;
+  background: #e8f5e9;
+  border-radius: 8px;
+  border-left: 3px solid #0FAF5A;
+}
+
+.setup-guide h3 {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  color: #0FAF5A;
+  font-weight: 700;
+}
+
+.setup-guide ol {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 11px;
+  color: #555;
+}
+
+.setup-guide li {
+  margin-bottom: 4px;
+  line-height: 1.4;
+}
+
+.setup-guide ul {
+  margin: 4px 0 0 0;
+  padding-left: 18px;
+  list-style: none;
+}
+
+.setup-guide ul li {
+  margin-bottom: 2px;
+}
+
+.setup-guide a {
+  color: #0FAF5A;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.setup-guide a:hover {
+  text-decoration: underline;
+}

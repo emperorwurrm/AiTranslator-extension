@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "AiTranslator",
+  "version": "1.0",
+  "description": "Translate any text instantly with AI. Select text, and get translations powered by OpenAI, Claude, Gemini, DeepSeek, or OpenRouter.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon-128.png"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "128": "icons/icon-128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/icon-48.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ]
+}
